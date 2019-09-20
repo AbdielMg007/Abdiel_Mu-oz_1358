@@ -9,6 +9,6 @@ def main():
   juego.to_string()
   for r in range(5):
     for c in range(5):
-      print(f"[{r}][{c}]=juego.get_num_live_neighbours(r,c)}")
+      print(f"[{r}][{c}]={juego.get_num_live_neighbours(r,c)}")
      
 main()  
