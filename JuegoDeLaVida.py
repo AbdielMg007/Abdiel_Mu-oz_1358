@@ -1,22 +1,3 @@
-'''Reglas del juego de la vida
-	
-	1. Si una célula que se encuentra viva tiene 0 o 1 vecino, muere por soledad para la siguiente generación. Donde los vecinos son las 8 células que lo rodean inmediatamente.
-	2. Una célula viva que tiene 2 o 3 vecinos sobrevive para la siguiente generación.
-	3. Una célula viva que tiene 4 o más vecinos muere por sobrepoblación para la siguiente generación.
-	4. Una célula muerta con exáctamente 3 vecinos vivos resulta en un nacimiento cuya vida empieza en la siguiente generación. Todas las demás células muertas permanecen muertas para la siguiente generación.
-	
-	----------------------------------------------------------------
-	ADT Juego de la vida
-	
-	JuegoDeLaVida(rows,cols,generaciones,poblacion_inicial)
-	get_num_rows()
-	get_num_cols()
-	configure_next_gen(nueva_poblacion)
-	set_cell_death(row,col)
-	set_cell_alive(row,col)
-	is_live_cell(row,col) => boolean
-	get_num_live_neighbors(row,col)
-	'''
 	from Array2D import Array2D
 	
 	class JuegoDeLaVida:
